@@ -6,7 +6,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="contact-page">
     <table class="navbar" width="100%" border="0">
       <tr>
         <td><b>Contact Us</b></td>
@@ -66,6 +66,10 @@
         <h2>Saturday – Sunday</h2>
         <p>9:00 AM – 11:00 PM</p>
       </div>
+      <p id="time"></p>
+      <center>
+        <button onclick="callRestaurant()">Call Restaurant</button>
+      </center>
     </div>
 
     <div class="contact-box">
@@ -93,11 +97,14 @@
 
         <label>Message</label>
         <textarea rows="6" placeholder="Enter Your Message"></textarea>
-        <button type="button" onclick="Submit()">Send Message</button>
+        <center>
+          <button type="button" onclick="Submit()">Send Message</button>
+        </center>
       </form>
     </div>
 
     <footer class="footer">
+
       <h2>Food Fusion</h2>
 
       <p class="tagline">"Serving delicious memories, one plate at a time."</p>
@@ -130,6 +137,20 @@
           alert("Message Sent Successfully!");
         }
       }
+
+      function callRestaurant() {
+        alert("Call us at +91 98765 43210");
+      }
+
+      function showTime() {
+        let now = new Date();
+
+        document.getElementById("time").innerHTML =
+          "🕒 Current Time: " + now.toLocaleTimeString();
+      }
+
+      setInterval(showTime, 1000);
+      showTime();
     </script>
   </body>
 </html>
