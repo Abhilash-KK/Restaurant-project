@@ -4,138 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Website</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-      .hero {
-        background-image: url(background\ img.png);
-        background-size: cover;
-        background-position: center;
-        height: 705px;
-        display: flex;
-        align-items: center;
-        padding-left: 80px;
-      }
-
-      .content {
-        width: 45%;
-        color: white;
-      }
-
-      .content h1 {
-        font-size: 55px;
-        margin-bottom: 10px;
-      }
-
-      .content h2 {
-        font-size: 32px;
-        color: orange;
-      }
-
-      .content p {
-        font-size: 18px;
-        line-height: 30px;
-      }
-
-      button {
-        padding: 12px 25px;
-        font-size: 18px;
-        background: orange;
-        color: white;
-        border: none;
-      }
-      .navbar {
-        background-color: #1b1b1b;
-        height: 70px;
-      }
-
-      .navbar a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 22px;
-        margin: 0 20px;
-        font-style: italic;
-      }
-
-      .navbar a:hover {
-        color: #ffb300;
-      }
-      .navbar td{
-        color: white;
-        font-size: 20px;
-      }
-
-      .heading{
-    text-align:center;
-    color:#ffb300;
-    font-size:42px;
-    margin:50px 0;
-    font-style:italic;
-}
-
-.featured,
-.choose,
-.reviews{
-    background:#111;
-    padding:50px 100px;
-}
-
-.food-menu,
-.choose-list{
-    list-style:none;
-    padding:0;
-}
-
-.food-menu li,
-.choose-list li{
-    padding:25px 0;
-    border-bottom:1px solid #444;
-}
-
-.food-menu h2,
-.choose-list h2{
-    color:white;
-    font-size:30px;
-}
-
-.food-menu p,
-.choose-list p{
-    color:#cfcfcf;
-    font-size:18px;
-    line-height:28px;
-}
-
-.food-menu li:hover,
-.choose-list li:hover{
-    padding-left:20px;
-    transition:0.5s;
-}
-
-.review-box{
-    margin:40px 0;
-    padding:25px;
-    border-left:5px solid orange;
-    background:#1c1c1c;
-}
-
-.review-box h2{
-    color:gold;
-}
-
-.review-box blockquote{
-    color:white;
-    font-size:20px;
-    font-style:italic;
-    line-height:30px;
-}
-
-.review-box p{
-    color:orange;
-    font-size:18px;
-}
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <table class="navbar" width="100%" border="0">
@@ -162,93 +32,120 @@
       </div>
     </header>
 
-   <section class="featured">
-    <h1 class="heading">Featured Dishes</h1>
+    <section class="featured">
+      <h1 class="heading">Featured Dishes</h1>
 
-    <ul class="food-menu">
+      <ul class="food-menu">
         <li>
-            <h2>🍕 Margherita Pizza</h2>
-            <p>A delicious classic pizza topped with fresh mozzarella, tomatoes, basil, and our signature tomato sauce.</p>
+          <h2>🍕 Margherita Pizza</h2>
+          <p>
+            A delicious classic pizza topped with fresh mozzarella, tomatoes,
+            basil, and our signature tomato sauce.
+          </p>
         </li>
 
         <li>
-            <h2>🍔 Chicken Cheese Burger</h2>
-            <p>Juicy grilled chicken layered with melted cheese, fresh vegetables, and our special homemade sauce.</p>
+          <h2>🍔 Chicken Cheese Burger</h2>
+          <p>
+            Juicy grilled chicken layered with melted cheese, fresh vegetables,
+            and our special homemade sauce.
+          </p>
         </li>
 
         <li>
-            <h2>🍛 Chicken Dum Biryani</h2>
-            <p>Traditional aromatic basmati rice cooked with tender chicken pieces and authentic Indian spices.</p>
+          <h2>🍛 Chicken Dum Biryani</h2>
+          <p>
+            Traditional aromatic basmati rice cooked with tender chicken pieces
+            and authentic Indian spices.
+          </p>
         </li>
 
         <li>
-            <h2>🍝 Creamy Alfredo Pasta</h2>
-            <p>Perfectly cooked pasta tossed in a rich and creamy Alfredo sauce with herbs and parmesan cheese.</p>
+          <h2>🍝 Creamy Alfredo Pasta</h2>
+          <p>
+            Perfectly cooked pasta tossed in a rich and creamy Alfredo sauce
+            with herbs and parmesan cheese.
+          </p>
         </li>
-    </ul>
-</section>
+      </ul>
+    </section>
 
     <section class="choose">
-    <h1 class="heading">Why Choose Food Fusion?</h1>
+      <h1 class="heading">Why Choose Food Fusion?</h1>
 
-    <ul class="choose-list">
+      <ul class="choose-list">
         <li>
-            <h2>Fresh Ingredients</h2>
-            <p>We source fresh vegetables, premium meats, and quality spices every day.</p>
+          <h2>Fresh Ingredients</h2>
+          <p>
+            We source fresh vegetables, premium meats, and quality spices every
+            day.
+          </p>
         </li>
 
         <li>
-            <h2>Expert Chefs</h2>
-            <p>Experienced chefs preparing delicious dishes with passion.</p>
+          <h2>Expert Chefs</h2>
+          <p>Experienced chefs preparing delicious dishes with passion.</p>
         </li>
 
         <li>
-            <h2>Cozy Atmosphere</h2>
-            <p>Relax and enjoy meals in a warm and welcoming environment.</p>
+          <h2>Cozy Atmosphere</h2>
+          <p>Relax and enjoy meals in a warm and welcoming environment.</p>
         </li>
 
         <li>
-            <h2>Fast & Friendly Service</h2>
-            <p>Quick service with a smile every time you visit.</p>
+          <h2>Fast & Friendly Service</h2>
+          <p>Quick service with a smile every time you visit.</p>
         </li>
-    </ul>
-</section>
-    
+      </ul>
+    </section>
 
-   <section class="reviews">
+    <section class="reviews">
+      <h1 class="heading">Customer Reviews</h1>
 
-<h1 class="heading">Customer Reviews</h1>
+      <div class="review-box">
+        <h2>⭐⭐⭐⭐⭐</h2>
+        <blockquote>
+          "The food was absolutely delicious, and the staff were incredibly
+          friendly."
+        </blockquote>
+        <p>— Rahul M.</p>
+      </div>
 
-<div class="review-box">
-    <h2>⭐⭐⭐⭐⭐</h2>
-    <blockquote>
-        "The food was absolutely delicious, and the staff were incredibly friendly."
-    </blockquote>
-    <p>— Rahul M.</p>
-</div>
+      <div class="review-box">
+        <h2>⭐⭐⭐⭐</h2>
+        <blockquote>
+          "One of the best restaurants in town. The biryani was amazing."
+        </blockquote>
+        <p>— Priya S.</p>
+      </div>
 
-<div class="review-box">
-    <h2>⭐⭐⭐⭐</h2>
-    <blockquote>
-        "One of the best restaurants in town. The biryani was amazing."
-    </blockquote>
-    <p>— Priya S.</p>
-</div>
+      <div class="review-box">
+        <h2>⭐⭐⭐⭐⭐</h2>
+        <blockquote>
+          "Beautiful ambiance, excellent service and fantastic food."
+        </blockquote>
+        <p>— Arjun K.</p>
+      </div>
+      <footer class="footer">
+        <h2>Food Fusion</h2>
 
-<div class="review-box">
-    <h2>⭐⭐⭐⭐⭐</h2>
-    <blockquote>
-        "Beautiful ambiance, excellent service and fantastic food."
-    </blockquote>
-    <p>— Arjun K.</p>
-</div>
+        <p class="tagline">
+          "Serving delicious memories, one plate at a time."
+        </p>
 
-</section>
+        <p class="copyright">
+          &copy; 2026 Food Fusion Restaurant. All Rights Reserved.
+        </p>
+      </footer>
+    </section>
 
     <script>
-        function Menu(){
-            window.location.href="menu.html"
-        }
-    </script
+      function Menu() {
+        window.location.href = "menu.html";
+      }
+
+    
+   
+    </script>
   </body>
 </html>

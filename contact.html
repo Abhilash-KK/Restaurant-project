@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table class="navbar" width="100%" border="0">
+      <tr>
+        <td><b>Contact Us</b></td>
+        <td align="right">
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="contact-box">
+      <h1>Get in Touch</h1>
+      <p>
+        We would love to hear from you! Whether you have a question, feedback,
+        or would like to reserve a table, <br />our team is always ready to
+        assist you.
+      </p>
+
+      <h1>Restaurant Address</h1>
+
+      <address>
+        <h2>Food Fusion Restaurant</h2>
+        <p>MG road</p>
+        <p>Kottayam ,Kerala-686001</p>
+        <p>India</p>
+      </address>
+
+      <h1>Contact Details</h1>
+
+      <p>📞 <b>Phone:</b></p>
+      <p>+91 98765 43210</p>
+
+      <p>📧 <b>Email:</b></p>
+      <p>
+        <a href="mailto:contact@foodfusion.com"> contact@foodfusion.com </a>
+      </p>
+
+      <p>🌐 <b>Website:</b></p>
+      <p>
+        <a href="https://www.foodfusion.com" target="_blank">
+          www.foodfusion.com
+        </a>
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h1>Working Hours</h1>
+
+      <div class="time-box">
+        <h2>Monday – Friday</h2>
+        <p>10:00 AM – 10:00 PM</p>
+      </div>
+
+      <div class="time-box">
+        <h2>Saturday – Sunday</h2>
+        <p>9:00 AM – 11:00 PM</p>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <h1>Contact Form</h1>
+      <form>
+        <label>Full Name</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter Your Full Name"
+        /><br /><br />
+
+        <label>Email Address</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter Your Email"
+        /><br /><br />
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Your Phone Number" /><br /><br />
+
+        <label>Subject</label>
+        <input type="text" placeholder="Enter Subject" /><br /><br />
+
+        <label>Message</label>
+        <textarea rows="6" placeholder="Enter Your Message"></textarea>
+        <button type="button" onclick="Submit()">Send Message</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <h2>Food Fusion</h2>
+
+      <p class="tagline">"Serving delicious memories, one plate at a time."</p>
+
+      <p class="copyright">
+        &copy; 2026 Food Fusion Restaurant. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script>
+      function Submit() {
+        alert("Message Sent Successfully");
+      }
+
+      function Submit() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+
+        if (name == "" || email == "") {
+          alert("Please fill all required fields.");
+          return;
+        }
+
+        alert("Message Sent Successfully!");
+      }
+      function Submit() {
+        let result = confirm("Do you want to send the message?");
+
+        if (result) {
+          alert("Message Sent Successfully!");
+        }
+      }
+    </script>
+  </body>
+</html>
