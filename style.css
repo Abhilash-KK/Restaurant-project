@@ -87,12 +87,26 @@ button:hover {
   transform: scale(1.05);
 }
 
-.heading {
-  text-align: center;
-  color: #ffb300;
-  font-size: 42px;
-  margin: 50px 0;
-  font-style: italic;
+.heading{
+    text-align:center;
+    color:#ffb300;
+    font-size:45px;
+    font-style:italic;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin:50px 0;
+    text-shadow:0 0 10px rgba(255,179,0,0.6);
+    position:relative;
+}
+
+.heading::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    background:orange;
+    margin:15px auto 0;
+    border-radius:5px;
 }
 
 .featured,
@@ -378,10 +392,12 @@ textarea:focus {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(255,165,0,0.30);
 }
-.food-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
+.food-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+    border-radius:10px 10px 0 0;
 }
 .food-card h3 {
     color: white;
@@ -410,6 +426,7 @@ textarea:focus {
     font-size: 18px;
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom:15px;
 }
 .food-card button:hover {
     background: #ff8c00;
